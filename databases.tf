@@ -1,4 +1,4 @@
-resource "snowflake_database" "db" {
-  provider = snowflake.sys_admin
-  name     = "TF_DEMO2"
+resource "snowflake_database" "bookstore_db" {
+  name    = "BOOKSTORE_DB"
+  comment = "Database for managing bookstore inventory."
 }

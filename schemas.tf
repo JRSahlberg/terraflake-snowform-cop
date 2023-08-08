@@ -1,5 +1,6 @@
-resource "snowflake_schema" "test_schema" {
-  provider            = snowflake.sys_admin
-  database            = snowflake_database.db.name
-  name                = "TEST_SCHEMA"
+resource "snowflake_schema" "inventory" {
+  provider = snowflake.sys_admin
+  name     = "INVENTORY"
+  database = snowflake_database.bookstore_db.name
+  comment  = "Schema for bookstore inventory tables."
 }
