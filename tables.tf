@@ -22,7 +22,7 @@ resource "snowflake_table" "authors" {
   }
 
   column {
-    name     = "BIRT_HDATE"
+    name     = "BIRTH_DATE"
     type     = "DATE"
   }
 
