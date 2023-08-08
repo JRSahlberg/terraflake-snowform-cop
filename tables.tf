@@ -46,7 +46,6 @@ resource "snowflake_table" "orders" {
     name     = "ORDER_ID"
     type     = "NUMBER(38,0)"
     nullable = false
-    comment  = "Unique identifier for an order."
   }
 
   column {
