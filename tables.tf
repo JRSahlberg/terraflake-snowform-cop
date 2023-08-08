@@ -22,14 +22,15 @@ resource "snowflake_table" "authors" {
   }
 
   column {
+    name     = "NATIONALITY"
+    type     = "VARCHAR(100)"
+  }
+
+  column {
     name     = "BIRTH_DATE"
     type     = "DATE"
   }
 
-  column {
-    name     = "NATIONALITY"
-    type     = "VARCHAR(100)"
-  }
 }
 
 resource "snowflake_table" "books" {
