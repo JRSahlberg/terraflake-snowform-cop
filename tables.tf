@@ -85,7 +85,7 @@ resource "snowflake_table" "genres" {
 
   column {
     name     = "ID"
-    type     = "NUMBER(38,0)T"
+    type     = "NUMBER(38,0)"
     nullable = false
   }
 
