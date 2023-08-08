@@ -1,7 +1,7 @@
 resource "snowflake_table" "user_profiles" {
   provider = snowflake.sys_admin
   database = snowflake_database.db.name
-  schema   = snowflake_schema.user_schema.name
+  schema   = snowflake_schema.test_schema.name
   name     = "USER_PROFILES"
   comment  = "Table to store user profile details."
 
