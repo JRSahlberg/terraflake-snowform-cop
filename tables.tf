@@ -8,8 +8,6 @@ resource "snowflake_table" "user_profiles" {
   column {
     name     = "USER_ID"
     type     = "INTEGER"
-    primary_key = true
-    autoincrement = true
     nullable = false
     comment  = "Unique identifier for a user."
   }
@@ -17,7 +15,6 @@ resource "snowflake_table" "user_profiles" {
   column {
     name     = "EMAIL"
     type     = "VARCHAR(255)"
-    unique   = true
     nullable = false
     comment  = "Email address of the user."
   }
